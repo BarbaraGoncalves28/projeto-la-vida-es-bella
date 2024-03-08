@@ -132,6 +132,7 @@ a img{
      justify-content: center;
      margin: auto;
      gap: 80px;
+     margin-bottom: 90px;
 }
 
 .categoria:hover{
@@ -139,12 +140,8 @@ a img{
     transition: 1s;
 }
 
-hr{
-    margin: 150px;
-    border: 0.1px solid #E03456;
-}
-
 .bebe-footer{
+    margin-top: 100px;
     height: 60vh;
     width: 100%;
     border: none;
