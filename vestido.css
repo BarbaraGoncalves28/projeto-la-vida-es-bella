@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -24,6 +23,10 @@ h1{
     font-family: "Cormorant Garamond", serif;
 }
 
+h1:hover{
+    color: #eee;
+    transition: 0.5s ease-in-out;
+}
 
 a{
     font-size: 20px;
@@ -33,12 +36,8 @@ a{
 }
 
 a:hover{
-    color: #FECDC7;
-    transition: 0.8s ease-in-out;
-}
-
-a:active{
     color: #E03456;
+    transition: 0.5s ease-in-out;
 }
 
 nav{
@@ -48,33 +47,197 @@ nav{
    gap: 80px;
 }
 
-a img{
-    margin-top: 5px;
-    width: 90px;
-    height: 50px;
+h2{
+    margin-bottom: 10px; 
+    text-align: center;
+    margin-top: 80px;
 }
 
-
-.box{
-    margin-top: 40px;
+p{
+    font-family: "Poppins", sans-serif;
     text-align: center;
+}
+
+h4{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.image-product{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.product-image{
+    width: 110px;
+}
+
+.product-price-container{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product-price{
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.button-hover-background{
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-top: 8px;
+    width: 155px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff8f70;
+}
+
+.button-hover-background:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid #E03456;
+    transition: 1s ease-in-out;
+}
+
+section, .cart-table{
+    margin: auto;
+    margin-top: 100px;
     
 }
 
-
-.fale-conosco{
-    margin-top: 200px;
-    background-color: #E03456;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    font-family: "Cormorant Garamond", serif;
+.cart-table{
+    width: 80%;
+    border-collapse: collapse;
 }
 
-h3{
+.table-head-item{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: start;
+    border-bottom: 1px solid #959595;
+    padding-bottom: 6px;
+}
+
+.second-col, .third-col{
+      width: 26%;
+}
+
+.cart-product td{
+    padding: 8px 0;
+}
+
+.product-identification{
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image{
+    width: 70px;
+}
+
+.cart-product-title{
+    margin-left: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.cart-product-price{
+    font-family: "Poppins", sans-serif;
+}
+
+.product-qtd-input{
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #E03456;
+    background-color: #eee;
+    outline: none;
+    text-align: center;
+}
+
+.remove-product-button{
+    font-family: "Poppins", sans-serif;
+    margin-left: 12px;
+    color: white;
+    background-color: #ff8f70;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.remove-product-button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid gray;
+    transition: 1s ease-in-out;
+}
+
+.cart-total-container{
+    border-top: 1px solid #959595;
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+
+.cart-total-container strong{
+    margin-right: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+span{
+    font-family: "Poppins", sans-serif;
+}
+
+.porchasse-button{
+    font-family: "Poppins", sans-serif;
+    background-color: #ff8f70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    margin: 24px auto 0;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 15px;
+}
+
+.porchasse-button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid #E03456;
+    transition: 1s ease-in-out;
+}
+
+footer{
+    margin-top: 200px;
     font-style: italic;
     padding: 10px;
-    font-weight: lighter;
     background-color: #E03456;
     text-align: center;
 }

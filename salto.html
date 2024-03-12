@@ -8,44 +8,145 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>LA VIDA ES BELLA</h1></a>
+        <a href="index.html">
+            <h1>LA VIDA ES BELLA</h1>
+        </a>
         <nav>
-            <a href="#">Bebê</a>
-            <a href="#">Masculino</a>
-            <a href="#">Sobre nós</a>
-            <a href="#">Olá! Entre ou Cadastre-se</a>
-            <a href="#"><img src="img/carrinho-de-compra.png" alt="carrinho de compra"></a>
+            <a href="bebe.html">Bebê</a>
+            <a href="masc.html">Masculino</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="cadastro.html">Olá! Entre ou Cadastre-se</a>
         </nav>
+
+        <h2>SALTOS LA VIDA ES BELLA</h2>
+        <p>MODA FEMININA</p>
     </header>
 
-    <main>
-        <div class="box">
-            <h2>SALTOS LA VIDA ES BELLA</h2>
-            <p>MODA FEMININA</p>
-        </div>
+    <main class="main-section">
+        <section class="container normal-section">
+            <div class="products-container">
+                <div class="image-product">
+                    <strong class="product-title">SALTO SEXY</strong>
+                        <img class="product-image" src="img-salto/salto1.jpg" alt="imagem 1">
+                        <div class="product-price-container">
+                            <span class="product-price">R$195,00</span>
+                            <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                        </div>
+                </div>
 
-        <section>
-            <img src="img-salto/salto1.jpg" alt="salto1">
-            <img src="img-salto/salto2.jpg" alt="salto2">
-            <img src="img-salto/salto3.jpg" alt="salto3">
-            <img src="img-salto/salto4.jpg" alt="salto4">
-            <img src="img-salto/salto5.jpg" alt="salto5">
-            <img src="img-salto/salto6.jpg" alt="salto6">
+
+                 <div  class="image-product">
+                    <strong class="product-title">SALTO MODERNO</strong>
+                    <img class="product-image" src="img-salto/salto2.jpg" alt="imagem 2">
+                    <div class="product-price-container">
+                        <span class="product-price">R$180,90</span>
+                        <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+                <div class="image-product">
+                    <strong class="product-title">SALTO PATRÍCIA</strong>
+                    <img class="product-image" src="img-salto/salto3.jpg" alt="imagem 3">
+                    <div class="product-price-container">
+                        <span class="product-price">R$178,00</span>
+                        <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+                <div class="image-product">
+                    <strong class="product-title">SALTO BURGUESA</strong>
+                    <img class="product-image" src="img-salto/salto4.jpg" alt="imagem 4">
+                    <div class="product-price-container">
+                        <span class="product-price">R$185,90</span>
+                        <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+                <div class="image-product">
+                    <strong class="product-title">SALTO LADY</strong>
+                    <img class="product-image" src="img-salto/salto5.jpg" alt="imagem 5">
+                    <div class="product-price-container">
+                        <span class="product-price">R$150,00</span>
+                        <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+                <div class="image-product">
+                    <strong class="product-title">SALTO PRINCESA</strong>
+                    <img class="product-image" src="img-salto/salto6.jpg" alt="imagem 6">
+                    <div class="product-price-container">
+                        <span class="product-price">R$160,00</span>
+                        <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="container normal-section">
+            <h4 class="section-title">CARRINHO</h4>
+            <div>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th class="table-head-item first-col">ITEM</th>
+                            <th class="table-head-item second-col">PREÇO</th>
+                            <th class="table-head-item third-col">QUANTIDADE</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                         <!--   <tr class="cart-product"> 
+                            <td class="product-identification">
+                                <img class="cart-product-image" src="img-tumblr/tumblr1.jpg" alt="produto">
+                                <strong class="cart-product-title">MOLETOM</strong>
+                            </td>
+                            <td>
+                                <span class="cart-product-price">R$165,90</span>
+                            </td>
+                            <td>
+                                <input class="product-qtd-input" type="number" value="2" min="0">
+                                <button class="remove-product-button" type="button">Remover</button>
+                            </td>
+                        </tr>
+
+
+                        <tr class="cart-product">
+                            <td class="product-identification">
+                                <img class="cart-product-image" src="img-tumblr/tumblr3.jpg" alt="product">
+                                <strong class="cart-product-title">JEANS</strong>
+                            </td>
+                            <td>
+                                <span class="cart-product-price">R$110,90</span>
+                            </td>
+                            <td>
+                                <input class="product-qtd-input" type="number" value="1" min="0">
+                                <button class="remove-product-button" type="button">Remover</button>
+                            </td>
+                        </tr> -->
+                    </tbody> 
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="cart-total-container">
+                                <strong>Total:</strong>
+                                <span>R$0,00</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <button class="porchasse-button" type="button">Finalizar compra</button>
+            </div>
         </section>
     </main>
 
-
-
-
-    <footer>
-        <div class="fale-conosco"><h4>Redes sociais</h4>
-            <p>LA VIDA ES BELLA</p>
-            <img src="img-footer/icone-instagram.png" alt="instagram">
-            <img src="img-footer/icone-facebook.png" alt="facebook">
-            <img src="img-footer/icone-youtube.png" alt="youtube">
-            </div>
-        
-            <h3>&copy;Site criado por Bárbara Gonçalves</h3>
-    </footer>
+    <footer>&copy;Site criado por Bárbara Gonçalves</footer>
+    <script async src="salto.js"></script>
 </body>
 </html>

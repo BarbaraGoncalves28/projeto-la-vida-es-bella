@@ -125,4 +125,3 @@ document.querySelector(".cart-total-container span").innerText = "R$" + totalAmo
 
 }
 
-
