@@ -1,242 +1,229 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
+/* Reset e estilos básicos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    min-height: 100vh;
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
 }
 
-h1{
-    margin-top: 30px;
-    font-size: 50px;
-    margin-bottom: 30px;
+header {
+    background-color: #d0637c;
+    padding: 20px;
     text-align: center;
-    font-weight: 900;
-    font-family: "Cormorant Garamond", serif;
+    color: #fff;
 }
 
-h1:hover{
-    color: #eee;
-    transition: 0.5s ease-in-out;
-}
-
-a{
-    font-size: 20px;
+header a {
     text-decoration: none;
-    color: black;
-    font-family: "Cormorant Garamond", serif;
+    color: #fff;
 }
 
-a:hover{
-    color: #E03456;
-    transition: 0.5s ease-in-out;
+header h1 {
+    font-size: 2rem;
 }
 
-nav{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 80px;
+header nav {
+    margin-top: 10px;
 }
 
-h2{
-    margin-bottom: 10px; 
-    text-align: center;
-    margin-top: 80px;
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
-p{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
+header nav a:hover {
+    color: #ffdddd;
 }
 
-h4{
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+header p {
+    font-size: 1rem;
 }
 
-.image-product{
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+/* Estilos principais */
+.main-section {
+    padding: 20px;
 }
 
-.product-title{
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    margin-bottom: 6px;
+.container {
+    margin-bottom: 30px;
 }
 
-.product-image{
-    width: 110px;
-}
-
-.product-price-container{
-    margin-top: 8px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-.products-container{
+.products-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.product-price{
-    margin-right: 10px;
-    font-family: "Poppins", sans-serif;
-}
-
-.button-hover-background{
-    cursor: pointer;
-    color: white;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-    margin-top: 8px;
-    width: 155px;
-    height: 30px;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    background-color: #ff8f70;
-}
-
-.button-hover-background:hover{
-    color: black;
-    background-color: white;
-    border: 2px solid #E03456;
-    transition: 1s ease-in-out;
-}
-
-section, .cart-table{
-    margin: auto;
-    margin-top: 100px;
-}
-
-.cart-table{
-    width: 80%;
-    border-collapse: collapse;
-}
-
-.table-head-item{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    text-align: start;
-    border-bottom: 1px solid #959595;
-    padding-bottom: 6px;
-}
-
-.second-col, .third-col{
-      width: 26%;
-}
-
-.cart-product td{
-    padding: 8px 0;
-}
-
-.product-identification{
-    display: flex;
-    align-items: center;
-}
-
-.cart-product-image{
-    width: 70px;
-}
-
-.cart-product-title{
-    margin-left: 16px;
-    font-size: 13px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-}
-
-.cart-product-price{
-    font-family: "Poppins", sans-serif;
-}
-
-.product-qtd-input{
-    width: 48px;
-    height: 34px;
-    border-radius: 6px;
-    border: 2px solid #E03456;
-    background-color: #eee;
-    outline: none;
-    text-align: center;
-}
-
-.remove-product-button{
-    font-family: "Poppins", sans-serif;
-    margin-left: 12px;
-    color: white;
-    background-color: #ff8f70;
-    padding: 10px 8px;
-    border: none;
-    border-radius: 5px;
-}
-
-.remove-product-button:hover{
-    color: black;
-    background-color: white;
-    border: 2px solid gray;
-    transition: 1s ease-in-out;
-}
-
-.cart-total-container{
-    border-top: 1px solid #959595;
-    text-align: end;
-    padding: 6px 16px 0 0;
-    font-size: 18px;
-}
-
-.cart-total-container strong{
-    margin-right: 12px;
-    font-family: "Poppins", sans-serif;
-}
-
-span{
-    font-family: "Poppins", sans-serif;
-}
-
-.porchasse-button{
-    font-family: "Poppins", sans-serif;
-    background-color: #ff8f70;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    display: flex;
-    margin: 24px auto 0;
-    align-items: center;
+    gap: 15px;
     justify-content: center;
-    padding: 11px 15px;
 }
 
-.porchasse-button:hover{
-    color: black;
-    background-color: white;
-    border: 2px solid #E03456;
-    transition: 1s ease-in-out;
-}
-
-footer{
-    margin-top: 200px;
-    font-style: italic;
-    padding: 10px;
-    background-color: #E03456;
+.image-product {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 220px; /* Largura ajustada para corresponder à altura das imagens */
+    transition: transform 0.3s;
+}
+
+.image-product:hover {
+    transform: scale(1.03);
+}
+
+.product-image {
+    width: 100%;
+    height: 130px; /* Diminuindo ainda mais o tamanho das imagens */
+    object-fit: cover;
+}
+
+.product-title {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #d0637c;
+}
+
+.button-hover-background {
+    background-color: #d0637c;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-hover-background:hover {
+    background-color: #b05266;
+}
+
+/* Estilo da tabela do carrinho */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table .cart-product-image {
+    width: 60px; /* Diminuindo a largura das imagens do carrinho */
+    height: 60px; /* Diminuindo a altura das imagens do carrinho */
+    object-fit: cover;
+}
+
+.cart-table .cart-product-title {
+    font-size: 0.9rem;
+}
+
+.cart-table .cart-product-price {
+    font-size: 0.9rem;
+}
+
+.cart-table .product-qtd-input {
+    width: 50px;
+    text-align: center;
+}
+
+.remove-product-button {
+    background-color: #ff6f6f;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.remove-product-button:hover {
+    background-color: #e55a5a;
+    transform: scale(1.05);
+}
+
+.cart-total-container {
+    text-align: right;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.porchasse-button {
+    background-color: #d0637c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.porchasse-button:hover {
+    background-color: #b05266;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-product {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-product {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .button-hover-background, .porchasse-button {
+        width: 100%;
+    }
+
+    header h1, header h2 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
 }

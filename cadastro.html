@@ -5,22 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
     <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff8f70;
+        }
+
+        .box-degrade {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #ff8f70, #ff6f61);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #e03456;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c02b45;
+        }
+
+        .msg {
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .msg span {
+            font-weight: bold;
+            color: #fff7f3;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff7f3;
+        }
+
+        @media (max-width: 480px) {
+            .box-degrade {
+                padding: 20px;
+            }
+
+            input, button {
+                font-size: 14px;
+            }
+
+            .msg {
+                font-size: 14px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="box-degrade">
         <form>
-            <input placeholder="Nome completo:" type="text" name="name" id="name">
-            <input placeholder="Senha:" type="password" name="password" id="password">
-            <input placeholder="Email:" type="email" name="email" id="email">
+            <input placeholder="Nome completo:" type="text" name="name" id="name" required>
+            <input placeholder="Senha:" type="password" name="password" id="password" required>
+            <input placeholder="Email:" type="email" name="email" id="email" required>
             <button type="submit">LOGIN</button>
-          </form>
+        </form>
 
-          <div class="msg">
-              <p>Nós da <span>LA VIDA ES BELLA </span>ficamos felizes <br> em saber que você escolheu a nossa loja. 😍😍 <br> Agradecemos a preferência e esperamos tê-lo de novo como nosso cliente. <br>Fique à vontade para falar com a nossa equipe.<br><br>#TamoJunto 🌹</p>
-          </div>
+        <div class="msg">
+            <p>Nós da <span>LA VIDA ES BELLA</span> ficamos felizes <br> em saber que você escolheu a nossa loja. 😍😍 <br> Agradecemos a preferência e esperamos tê-lo de novo como nosso cliente. <br>Fique à vontade para falar com a nossa equipe.<br><br>#TamoJunto 🌹</p>
+        </div>
 
-          <a href="index.html">Voltar para a página inicial</a>
+        <a href="index.html">Voltar para a página inicial</a>
     </div>
     
 </body>

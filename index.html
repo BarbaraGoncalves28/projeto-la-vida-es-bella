@@ -5,115 +5,287 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>La vida es bella</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #d0637c;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #ffdddd;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel li {
+            list-style: none;
+            flex: none;
+            scroll-snap-align: start;
+            margin: 0 10px;
+        }
+
+        .carousel img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .caixa-frase {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .caixa-frase h2 {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .caixa-frase p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .caixa-categoria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .box-categoria{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .categoria {
+            text-align: center;
+            width: 200px;
+        }
+
+        .categoria img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .categoria a {
+            text-decoration: none;
+            color: #d0637c;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .categoria a:hover {
+            color: #ff858f;
+        }
+
+        footer {
+            background-color: #d0637c;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        footer aside {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        footer h2 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer h2 a:hover {
+            color: #ffdddd;
+        }
+
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            .carousel img {
+                width: 200px;
+            }
+
+            .categoria {
+                width: 150px;
+            }
+
+            footer aside {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+            }
+
+            .carousel img {
+                width: 150px;
+            }
+
+            .categoria {
+                width: 120px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-    <h1>LA VIDA ES BELLA</h1>
-    <nav>
-        <a href="bebe.html">Bebê</a>
-        <a href="masc.html">Masculino</a>
-        <a href="sobre.html">Sobre nós</a>
-        <a href="cadastro.html">Olá! Entre ou Cadastre-se</a>
-    </nav>
+        <h1>LA VIDA ES BELLA</h1>
+        <nav>
+            <a href="bebe.html">Bebê</a>
+            <a href="masc.html">Masculino</a>
+            <a href="cadastro.html">Olá! Entre ou Cadastre-se</a>
+        </nav>
     </header>
 
     <main>
         <div class="wrapper">
-         <ul class="carousel">
-            <li class="card">
-                <img src="img-slide/mulher-jaqueta-caramelo.jpg" alt="imagem1" draggable="false">
-            </li>
+            <ul class="carousel">
+                <li class="card">
+                    <img src="img-slide/mulher-jaqueta-caramelo.jpg" alt="imagem1">
+                </li>
+                <li class="card">
+                    <img src="img-slide/mulher-sorrindo-cabide.jpg" alt="imagem2">
+                </li>
+                <li class="card">
+                    <img src="img-slide/3amigas.jpg" alt="imagem3">
+                </li>
+                <li class="card">
+                    <img src="img-slide/menina-country.jpg" alt="imagem4">
+                </li>
+                <li class="card">
+                    <img src="img-slide/roupinhas.jpg" alt="imagem5">
+                </li>
+                <li class="card">
+                    <img src="img-slide/bebe-safari.jpg" alt="imagem6">
+                </li>
+                <li class="card">
+                    <img src="img-slide/bebe-bolhinhas.jpg" alt="imagem7">
+                </li>
+                <li class="card">
+                    <img src="img-slide/sapatinhos.jpg" alt="imagem8">
+                </li>
+            </ul>
 
-            <li class="card">
-                <img src="img-slide/mulher-sorrindo-cabide.jpg" alt="imagem2" draggable="false"> 
-            </li>
-
-            <li class="card">
-                <img src="img-slide/3amigas.jpg" alt="imagem3" draggable="false">
-            </li>
-
-            <li class="card">
-                <img src="img-slide/menina-country.jpg" alt="imagem4" draggable="false">
-            </li>
-
-            <li class="card">
-                <img src="img-slide/roupinhas.jpg" alt="imagem5" draggable="false">
-            </li>
-
-            <li class="card">
-                <img src="img-slide/bebe-safari.jpg" alt="imagem6" draggable="false">
-            </li>
-
-            <li class="card">
-                <img src="img-slide/bebe-bolhinhas.jpg" alt="imagem7" draggable="false">
-            </li>
-
-            <li class="card">
-                <img src="img-slide/sapatinhos.jpg" alt="imagem8" draggable="false">
-            </li>
-        </ul>
-
-        <div class="caixa-frase">
-            <h2>ESCOLHA POR CATEGORIA</h2>
-            <p>UMA ROUPA, UM ESTILO, UMA PERSONALIDADE!</p>
+            <div class="caixa-frase">
+                <h2>ESCOLHA POR CATEGORIA</h2>
+                <p>UMA ROUPA, UM ESTILO, UMA PERSONALIDADE!</p>
+            </div>
         </div>
-    </div>
 
-    <div class="caixa-categoria">
-    <ul class="box-categoria">
-        <li class="categoria">
-            <div>
-                <img class="tumblrCapa" src="img-tumblr/tumblrCapa.jpg" alt="tumblr-capa">
-                <br>
-                <a href="tumblr.html"><span>Tumblr</span></a>
-            </div>
-        </li>
-
-        <li class="categoria">
-            <div>
-                <img class="vestidoCapa" src="img-vestido/vestidoCapa.jpg" alt="vestido-capa">
-                <br>
-                <a href="vestido.html"><span>Vestidos</span></a>
-            </div>
-        </li>
-
-        <li class="categoria">
-            <div>
-                <img class="socialCapa" src="img-main/socialfemininoCapa.jpg" alt="social-capa">
-                <br>
-                <a href="social.html"><span>Social</span></a>
-            </div>
-        </li>
-
-        <li class="categoria">
-            <div>
-                <img class="saltoCapa" src="img-salto/saltoCapa.jpg" alt="salto-capa">
-                <br>
-                <a href="salto.html"><span>Saltos</span></a>
-            </div>
-        </li>
-    </ul>
-   </div>
-   <hr>
+        <div class="caixa-categoria">
+            <ul class="box-categoria">
+                <li class="categoria">
+                    <div>
+                        <img class="tumblrCapa" src="img-tumblr/tumblrCapa.jpg" alt="tumblr-capa">
+                        <br>
+                        <a href="tumblr.html"><span>Tumblr</span></a>
+                    </div>
+                </li>
+                <li class="categoria">
+                    <div>
+                        <img class="vestidoCapa" src="img-vestido/vestidoCapa.jpg" alt="vestido-capa">
+                        <br>
+                        <a href="vestido.html"><span>Vestidos</span></a>
+                    </div>
+                </li>
+                <li class="categoria">
+                    <div>
+                        <img class="socialCapa" src="img-main/socialfemininoCapa.jpg" alt="social-capa">
+                        <br>
+                        <a href="social.html"><span>Social</span></a>
+                    </div>
+                </li>
+                <li class="categoria">
+                    <div>
+                        <img class="saltoCapa" src="img-salto/saltoCapa.jpg" alt="salto-capa">
+                        <br>
+                        <a href="salto.html"><span>Saltos</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr>
     </main>
-   
+
     <footer>
-<aside>
-    <img class="bebe-footer" src="img-footer/bebe-footer.jpg" alt="bebe-footer">
-    <h2>CONHEÇA - <a href="bebe.html">LA VIDA ES BELLA BEBÊS</a></h2>
+        <aside>
+            <div>
+                <img class="bebe-footer" src="img-footer/bebe-footer.jpg" alt="bebe-footer">
+                <h2>CONHEÇA - <a href="bebe.html">LA VIDA ES BELLA BABY</a></h2>
+            </div>
+            <div>
+                <img class="men-relogio" src="img-footer/men-relogio.jpg" alt="men-relogio">
+                <h2 class="poster-relogio">CONHEÇA - <a href="masc.html">LA VIDA ES BELLA MEN</a></h2>
+            </div>
+        </aside>
 
-    <img class="men-relogio" src="img-footer/men-relogio.jpg" alt="men-relogio">
-    <h2 class="poster-relogio">CONHEÇA - <a href="masc.html">LA VIDA ES BELLA MEN</a></h2>
-</aside>
-
-    <div class="fale-conosco"><h4>Redes sociais</h4>
-    <p>LA VIDA ES BELLA</p>
-    <img src="img-footer/icone-instagram.png" alt="instagram">
-    <img src="img-footer/icone-facebook.png" alt="facebook">
-    <img src="img-footer/icone-youtube.png" alt="youtube">
-    </div>
-
-    <h3>&copy;Site criado por Bárbara Gonçalves</h3>
+        <h3>&copy;Site criado por Bárbara Gonçalves</h3>
     </footer>
 </body>
 <script src="script.js"></script>
